@@ -9,7 +9,7 @@ exports.handler = async (event) => {
     try {
         const { username, password } = JSON.parse(event.body);
 
-        if (username === 'admin' && password === '123456') {
+        if (username === 'HuTao' && password === 'HuTao') {
             return {
                 statusCode: 200,
                 body: JSON.stringify({ code: 200, message: '登录成功' })
